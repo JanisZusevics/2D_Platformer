@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E458E1C3-50C3-953A-9901-47E005AB738F}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CWStarter</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Coin Rush</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\bin\</OutDir>
+    <IntDir>..\build\Debug\</IntDir>
+    <TargetName>CWStarter</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LibraryPath>include\ExternalLibraries\SFML-2.4.2\lib;include\ExternalLibraries\Box2DEngine\x64\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin\</OutDir>
+    <IntDir>..\build\Release\</IntDir>
+    <TargetName>CWStarter</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LibraryPath>include\ExternalLibraries\SFML-2.4.2\lib;include\ExternalLibraries\Box2DEngine\x64\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>include;include/ExternalLibraries;include\ExternalLibraries\Box2DEngine;include\ExternalLibraries\SFML-2.4.2\include;include\ExternalLibraries\SFML-2.4.2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freetype.lib;Box2D.lib;sfml-main.lib;sfml-graphics-s-d.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-audio-s-d.lib;opengl32.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;jpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>...\ExternalLibraries\Box2DEngine;ExternalLibraries\Box2DEngine\Box2D\x64\Debug;ExternalLibraries\SFML-2.4.2\lib;...\ExternalLibraries\SFML-2.4.2\include;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;include/ExternalLibraries;include\ExternalLibraries\Box2DEngine;include\ExternalLibraries\SFML-2.4.2\include;include\ExternalLibraries\SFML-2.4.2\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>freetype.lib;Box2D.lib;sfml-main.lib;sfml-graphics-s.lib;sfml-system-s.lib;sfml-window-s.lib;sfml-audio-s.lib;opengl32.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;jpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>...\ExternalLibraries\Box2DEngine;ExternalLibraries\Box2DEngine\Box2D\x64\Release;ExternalLibraries\SFML-2.4.2\lib;...\ExternalLibraries\SFML-2.4.2\include;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Box2D.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2BroadPhase.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2Collision.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2Distance.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2DynamicTree.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2TimeOfImpact.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2ChainShape.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2CircleShape.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2EdgeShape.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2PolygonShape.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2Shape.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2BlockAllocator.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Draw.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2GrowableStack.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Math.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Settings.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2StackAllocator.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Timer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2Body.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2ContactManager.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2Fixture.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2Island.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2TimeStep.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2World.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2WorldCallbacks.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2CircleContact.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2Contact.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2ContactSolver.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2PolygonContact.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2DistanceJoint.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2FrictionJoint.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2GearJoint.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2Joint.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2MotorJoint.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2MouseJoint.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2PrismaticJoint.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2PulleyJoint.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2RevoluteJoint.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2RopeJoint.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2WeldJoint.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2WheelJoint.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Rope\b2Rope.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\AlResource.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\Export.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\InputSoundFile.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\Listener.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\Music.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\OutputSoundFile.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\Sound.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundBuffer.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundBufferRecorder.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundFileFactory.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundFileReader.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundFileWriter.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundRecorder.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundSource.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundStream.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Config.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\BlendMode.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\CircleShape.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Color.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\ConvexShape.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Drawable.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Export.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Font.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Glsl.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Glyph.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Image.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\PrimitiveType.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Rect.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\RectangleShape.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\RenderStates.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\RenderTarget.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\RenderTexture.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\RenderWindow.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Shader.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Shape.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Sprite.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Text.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Texture.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Transform.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Transformable.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Vertex.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\VertexArray.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\View.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Main.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\Export.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\Ftp.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\Http.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\IpAddress.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\Packet.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\Socket.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\SocketHandle.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\SocketSelector.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\TcpListener.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\TcpSocket.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\UdpSocket.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\OpenGL.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Clock.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Err.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Export.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\FileInputStream.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\InputStream.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Lock.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\MemoryInputStream.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Mutex.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\NativeActivity.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\NonCopyable.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Sleep.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\String.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Thread.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\ThreadLocal.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\ThreadLocalPtr.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Time.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Utf.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Vector2.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Vector3.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Context.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\ContextSettings.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Event.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Export.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\GlResource.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Joystick.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Keyboard.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Mouse.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Sensor.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Touch.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\VideoMode.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Window.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\WindowHandle.hpp" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\WindowStyle.hpp" />
+    <ClInclude Include="include\UI\hud.h" />
+    <ClInclude Include="include\gameObject\dynamicBlock.h" />
+    <ClInclude Include="include\gameObject\gameObject.h" />
+    <ClInclude Include="include\gameObject\gems.h" />
+    <ClInclude Include="include\gameObject\player.h" />
+    <ClInclude Include="include\gameObject\slime.h" />
+    <ClInclude Include="include\gameObject\staticBlock.h" />
+    <ClInclude Include="include\src\game.h" />
+    <ClInclude Include="include\utilities\Camera2D.h" />
+    <ClInclude Include="include\utilities\SFMLDebugDraw.h" />
+    <ClInclude Include="include\utilities\contactListener.h" />
+    <ClInclude Include="include\utilities\enemySensor.h" />
+    <ClInclude Include="include\utilities\textureManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2BroadPhase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2CollideCircle.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2CollideEdge.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2CollidePolygon.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2Collision.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2Distance.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2DynamicTree.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2TimeOfImpact.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2ChainShape.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2CircleShape.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2EdgeShape.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2PolygonShape.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2BlockAllocator.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Draw.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Math.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Settings.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2StackAllocator.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Timer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2Body.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2ContactManager.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2Fixture.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2Island.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2World.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2WorldCallbacks.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2CircleContact.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2Contact.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2ContactSolver.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2PolygonContact.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2DistanceJoint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2FrictionJoint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2GearJoint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2Joint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2MotorJoint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2MouseJoint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2PrismaticJoint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2PulleyJoint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2RevoluteJoint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2RopeJoint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2WeldJoint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2WheelJoint.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Rope\b2Rope.cpp" />
+    <ClCompile Include="include\UI\hud.cpp" />
+    <ClCompile Include="include\gameObject\Player.cpp" />
+    <ClCompile Include="include\gameObject\dynamicBlock.cpp" />
+    <ClCompile Include="include\gameObject\gameObject.cpp" />
+    <ClCompile Include="include\gameObject\gems.cpp" />
+    <ClCompile Include="include\gameObject\slime.cpp" />
+    <ClCompile Include="include\gameObject\staticBlock.cpp" />
+    <ClCompile Include="include\src\game.cpp" />
+    <ClCompile Include="include\src\main.cpp" />
+    <ClCompile Include="include\utilities\Camera2D.cpp" />
+    <ClCompile Include="include\utilities\SFMLDebugDraw.cpp" />
+    <ClCompile Include="include\utilities\contactListener.cpp" />
+    <ClCompile Include="include\utilities\enemySensor.cpp" />
+    <ClCompile Include="include\utilities\textureManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundFileFactory.inl" />
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Glsl.inl" />
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Rect.inl" />
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\String.inl" />
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Thread.inl" />
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\ThreadLocalPtr.inl" />
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Utf.inl" />
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Vector2.inl" />
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Vector3.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

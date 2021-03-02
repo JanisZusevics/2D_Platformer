@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="UI">
+      <UniqueIdentifier>{83755900-6F01-880B-D8AF-880BC45A880B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameObject">
+      <UniqueIdentifier>{F67647AF-E22E-89FC-4B36-6258370D24ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{212A0ED3-8D94-C249-D6D2-73EF427CA09E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalLibraries">
+      <UniqueIdentifier>{67a9fb59-32b0-4ba5-9f22-33118bfac193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalLibraries\SFML-2.4.2">
+      <UniqueIdentifier>{3ea90913-7cb0-4310-a797-40f2e7b4612a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalLibraries\Box2DEngine">
+      <UniqueIdentifier>{d6f39cfe-4317-4302-92c9-a0a05643b094}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\UI\hud.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gameObject\dynamicBlock.h">
+      <Filter>gameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gameObject\gameObject.h">
+      <Filter>gameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gameObject\gems.h">
+      <Filter>gameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gameObject\player.h">
+      <Filter>gameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gameObject\slime.h">
+      <Filter>gameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gameObject\staticBlock.h">
+      <Filter>gameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="include\src\game.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utilities\Camera2D.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utilities\SFMLDebugDraw.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utilities\contactListener.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utilities\enemySensor.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utilities\textureManager.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Box2D.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2BroadPhase.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2Collision.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2Distance.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2DynamicTree.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2TimeOfImpact.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2ChainShape.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2CircleShape.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2EdgeShape.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2PolygonShape.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2Shape.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2BlockAllocator.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Draw.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2GrowableStack.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Math.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Settings.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2StackAllocator.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Timer.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2Body.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2ContactManager.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2Fixture.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2Island.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2TimeStep.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2World.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2WorldCallbacks.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2CircleContact.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2Contact.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2ContactSolver.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2PolygonContact.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2DistanceJoint.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2FrictionJoint.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2GearJoint.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2Joint.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2MotorJoint.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2MouseJoint.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2PrismaticJoint.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2PulleyJoint.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2RevoluteJoint.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2RopeJoint.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2WeldJoint.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2WheelJoint.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Rope\b2Rope.h">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\AlResource.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\Export.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\InputSoundFile.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\Listener.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\Music.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\OutputSoundFile.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\Sound.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundBuffer.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundBufferRecorder.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundFileFactory.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundFileReader.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundFileWriter.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundRecorder.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundSource.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundStream.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Config.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\BlendMode.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\CircleShape.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Color.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\ConvexShape.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Drawable.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Export.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Font.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Glsl.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Glyph.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Image.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\PrimitiveType.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Rect.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\RectangleShape.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\RenderStates.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\RenderTarget.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\RenderTexture.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\RenderWindow.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Shader.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Shape.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Sprite.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Text.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Texture.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Transform.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Transformable.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Vertex.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\VertexArray.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\View.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Main.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\Export.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\Ftp.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\Http.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\IpAddress.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\Packet.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\Socket.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\SocketHandle.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\SocketSelector.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\TcpListener.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\TcpSocket.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network\UdpSocket.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Network.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\OpenGL.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Clock.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Err.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Export.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\FileInputStream.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\InputStream.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Lock.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\MemoryInputStream.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Mutex.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\NativeActivity.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\NonCopyable.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Sleep.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\String.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Thread.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\ThreadLocal.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\ThreadLocalPtr.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Time.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Utf.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Vector2.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Vector3.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Context.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\ContextSettings.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Event.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Export.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\GlResource.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Joystick.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Keyboard.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Mouse.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Sensor.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Touch.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\VideoMode.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\Window.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\WindowHandle.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window\WindowStyle.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Window.hpp">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\UI\hud.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="include\gameObject\Player.cpp">
+      <Filter>gameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="include\gameObject\dynamicBlock.cpp">
+      <Filter>gameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="include\gameObject\gameObject.cpp">
+      <Filter>gameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="include\gameObject\gems.cpp">
+      <Filter>gameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="include\gameObject\slime.cpp">
+      <Filter>gameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="include\gameObject\staticBlock.cpp">
+      <Filter>gameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="include\src\game.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="include\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="include\utilities\Camera2D.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="include\utilities\SFMLDebugDraw.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="include\utilities\contactListener.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="include\utilities\enemySensor.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="include\utilities\textureManager.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2BroadPhase.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2CollideCircle.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2CollideEdge.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2CollidePolygon.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2Collision.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2Distance.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2DynamicTree.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\b2TimeOfImpact.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2ChainShape.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2CircleShape.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2EdgeShape.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Collision\Shapes\b2PolygonShape.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2BlockAllocator.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Draw.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Math.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Settings.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2StackAllocator.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Common\b2Timer.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2Body.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2ContactManager.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2Fixture.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2Island.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2World.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\b2WorldCallbacks.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2CircleContact.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2Contact.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2ContactSolver.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Contacts\b2PolygonContact.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2DistanceJoint.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2FrictionJoint.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2GearJoint.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2Joint.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2MotorJoint.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2MouseJoint.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2PrismaticJoint.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2PulleyJoint.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2RevoluteJoint.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2RopeJoint.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2WeldJoint.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Dynamics\Joints\b2WheelJoint.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\Box2D\Box2D\Rope\b2Rope.cpp">
+      <Filter>ExternalLibraries\Box2DEngine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Audio\SoundFileFactory.inl">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Glsl.inl">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\Graphics\Rect.inl">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\String.inl">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Thread.inl">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\ThreadLocalPtr.inl">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Utf.inl">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Vector2.inl">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\vendor\SFML-2.4.2\include\SFML\System\Vector3.inl">
+      <Filter>ExternalLibraries\SFML-2.4.2</Filter>
+    </None>
+  </ItemGroup>
+</Project>
